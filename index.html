@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+    <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <div class="logo-icon">🌱</div>
+        <span class="logo-text">UrbanGreen</span>
+      </div>
+      <nav class="nav">
+        <a href="#" class="nav-link" onclick="showPage('page-1')">Home</a>
+        <a href="#" class="nav-link" onclick="showPage('page-2')">My Garden</a>
+        <a href="#" class="nav-link">Plant Library</a>
+        <a href="#" class="nav-link">Tips</a>
+        <button class="profile-btn">👤 Profile</button>
+      </nav>
+      <div class="hamburger" onclick="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav-mobile">
+        <a href="#" class="nav-link" onclick="showPage('page-1')">🏠 Home</a>
+        <a href="#" class="nav-link" onclick="showPage('page-2')">🌿 My Garden</a>
+        <a href="#" class="nav-link">📚 Plant Library</a>
+        <a href="#" class="nav-link">💡 Tips</a>
+        <a href="#" class="nav-link">👤 Profile</a>
+      </nav>
+    </header>
+
+    <!-- Page 1 - Landing -->
+    <div id="page-1" class="page-1">
+      <main class="main-content">
+        <div class="content-left">
+          <h1 class="main-title">
+            Turn Your Urban Space Into a
+            <span class="green-text">Green Paradise</span>
+          </h1>
+
+          <p class="description">
+            Get personalized plant recommendations based on your location's
+            climate. Track your plants' growth with AI-powered insights and become
+            a successful urban farmer.
+          </p>
+
+          <div class="cta-buttons">
+            <button class="btn-primary" onclick="findPlants()">
+              📍 Find Plants for My Location
+            </button>
+            <button class="btn-secondary" onclick="showDashboard()">
+              🌿 Go to Dashboard
+            </button>
+          </div>
+
+          <div class="stats">
+            <div class="stat-item">
+              <div class="stat-number">50K+</div>
+              <div class="stat-label">Plants Recommended</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">12K+</div>
+              <div class="stat-label">Urban Gardeners</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">200+</div>
+              <div class="stat-label">Cities Covered</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-right">
+          <div class="hero-image"></div>
+          <div class="progress-card">
+            <div class="progress-header">
+              <svg
+                class="progress-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                ></path>
+              </svg>
+              <span class="progress-title">Growth Progress</span>
+            </div>
+            <div class="progress-value">89% Success Rate</div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Page 2 - Dashboard -->
+    <div id="page-2" class="page-2">
+      <div class="main-content">
+        <div class="dashboard-content">
+          <div class="weather-card">
+            <div class="weather-header">
+              <div class="weather-main">
+                <div class="location-info">📍 Mumbai, India • Tropical</div>
+                <div class="weather-title">Today's Weather</div>
+                <div class="temperature">28°C</div>
+                <div class="weather-condition">Partly Cloudy</div>
+              </div>
+              <div class="weather-icon">☀️</div>
+            </div>
+
+            <div class="perfect-note">✨ Perfect for outdoor plants</div>
+
+            <div class="weather-details">
+              <div class="weather-detail">
+                <div class="weather-detail-label">Humidity</div>
+                <div class="weather-detail-value">65%</div>
+              </div>
+              <div class="weather-detail">
+                <div class="weather-detail-label">UV Index</div>
+                <div class="weather-detail-value">7</div>
+              </div>
+              <div class="weather-detail">
+                <div class="weather-detail-label">Rainfall</div>
+                <div class="weather-detail-value">2mm</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quick-actions">
+            <h2>Quick Actions</h2>
+            <div class="actions-grid">
+              <div class="action-card">
+                <div class="action-icon identify-icon">📷</div>
+                <div class="action-title">Identify Plant</div>
+                <div class="action-subtitle">Snap a photo to learn more</div>
+              </div>
+              <div class="action-card">
+                <div class="action-icon doctor-icon">🩺</div>
+                <div class="action-title">Dr. Plant</div>
+                <div class="action-subtitle">Diagnose plant diseases</div>
+              </div>
+              <div class="action-card">
+                <div class="action-icon check-icon">✓</div>
+                <div class="action-title">Suitability Check</div>
+                <div class="action-subtitle">Find perfect plants</div>
+              </div>
+              <div class="action-card">
+                <div class="action-icon add-icon">+</div>
+                <div class="action-title">Add Plant</div>
+                <div class="action-subtitle">Start tracking growth</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <div class="sidebar-card metrics-card">
+            <h3 style="margin-bottom: 1.5rem; color: #2d3748">
+              Your Garden Stats
+            </h3>
+            <div class="metric-number">12</div>
+            <div class="metric-label">Active Plants</div>
+            <div
+              style="
+                margin: 1rem 0;
+                padding: 1rem 0;
+                border-top: 1px solid #f0f0f0;
+              "
+            >
+              <div class="metric-number">89%</div>
+              <div class="metric-label">Success Rate</div>
+            </div>
+          </div>
+
+          <div class="sidebar-card recent-activity">
+            <h3 style="margin-bottom: 1.5rem; color: #2d3748">Recent Activity</h3>
+            <div class="activity-item">
+              <div class="activity-icon">🌱</div>
+              <div class="activity-content">
+                <div class="activity-title">New plant added</div>
+                <div class="activity-time">2 hours ago</div>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon">💧</div>
+              <div class="activity-content">
+                <div class="activity-title">Watering reminder</div>
+                <div class="activity-time">5 hours ago</div>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon">📷</div>
+              <div class="activity-content">
+                <div class="activity-title">Plant identified</div>
+                <div class="activity-time">Yesterday</div>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon">🎯</div>
+              <div class="activity-content">
+                <div class="activity-title">Growth milestone</div>
+                <div class="activity-title">2 days ago</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3 style="margin-bottom: 1rem; color: #2d3748">Quick Tips</h3>
+            <div
+              style="
+                background: #f0fff4;
+                padding: 1rem;
+                border-radius: 8px;
+                border-left: 4px solid #48bb78;
+              "
+            >
+              <strong>💡 Today's Tip:</strong><br />
+              With high humidity today, it's perfect for propagating your plants!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="nav-tabs">
+      <a href="#" class="nav-tab active" onclick="showPage('page-1')">
+        <span>🏠</span>
+        Home
+      </a>
+      <a href="#" class="nav-tab" onclick="showPage('page-2')">
+        <span>🌿</span>
+        My Garden
+      </a>
+      <a href="#" class="nav-tab">
+        <span>📚</span>
+        Plant Library
+      </a>
+      <a href="#" class="nav-tab">
+        <span>💡</span>
+        Tips
+      </a>
+      <a href="#" class="nav-tab">
+        <span>👤</span>
+        Profile
+      </a>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
