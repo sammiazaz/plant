@@ -148,3 +148,35 @@ document.addEventListener("DOMContentLoaded", function () {
 function showDashboard() {
   showPage("page-2");
 }
+
+
+
+
+
+ // Add interactive functionality
+        document.querySelectorAll('.plant-item-3rd').forEach(item => {
+            item.addEventListener('click', function() {
+                const plantName = this.querySelector('.plant-name-3rd').textContent;
+                console.log(`Clicked on ${plantName}`);
+                // Add your click handling logic here
+            });
+        });
+
+        document.querySelectorAll('.update-btn-3rd').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                this.textContent = 'Updated!';
+                this.style.color = '#16a34a';
+                setTimeout(() => {
+                    this.textContent = 'Update';
+                    this.style.color = '#10b981';
+                }, 2000);
+            });
+        });
+
+        // Simulate progress animation on page load
+        setTimeout(() => {
+            document.querySelectorAll('.progress-fill-3rd').forEach(fill => {
+                fill.style.transition = 'width 2s ease-in-out';
+            });
+        }, 500);

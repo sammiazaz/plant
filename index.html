@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>Document</title>
   </head>
 
@@ -54,10 +58,14 @@
 
           <div class="cta-buttons">
             <button class="btn-primary" onclick="findPlants()">
-              📍 Find Plants for My Location
+              <i class="fa-solid fa-leaf"></i>
+              Find Plants for My Location
+              <!-- 📍 Find Plants for My Location -->
             </button>
             <button class="btn-secondary" onclick="showDashboard()">
-              🌿 Go to Dashboard
+              <i class="fa-solid fa-chart-line"></i>
+
+                    Go to Dashboard
             </button>
           </div>
 
@@ -109,7 +117,11 @@
           <div class="weather-card">
             <div class="weather-header">
               <div class="weather-main">
-                <div class="location-info">📍 Mumbai, India • Tropical</div>
+                <div class="location-info">
+                    
+ 
+
+<i class="fa-solid fa-location-dot"></i>Mumbai, India • Tropical</div>
                 <div class="weather-title">Today's Weather</div>
                 <div class="temperature">28°C</div>
                 <div class="weather-condition">Partly Cloudy</div>
@@ -234,19 +246,129 @@
       </div>
     </div>
 
+       <div class="container-3rd">
+        <div class="layout-3rd">
+            <!-- Left Panel: Perfect for Your Location -->
+            <div class="panel-3rd">
+                <div class="panel-header-3rd">
+                    <h2 class="panel-title-3rd">Perfect for Your Location</h2>
+                    <a href="#" class="view-all-3rd">View All</a>
+                </div>
+                
+                <div class="plant-item-3rd">
+                    <div class="plant-image-3rd" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">🍅</div>
+                    <div class="plant-info-3rd">
+                        <div class="plant-name-3rd">Cherry Tomatoes</div>
+                        <div class="plant-description-3rd">Easy to grow, perfect for beginners</div>
+                        <div class="plant-meta-3rd">
+                            <span class="match-rate-3rd">95% Match</span>
+                            <span class="growth-time-3rd">60-75 days</span>
+                        </div>
+                    </div>
+                    <div class="arrow-3rd">›</div>
+                </div>
+                
+                <div class="plant-item-3rd">
+                    <div class="plant-image-3rd" style="background: linear-gradient(135deg, #2ed573 0%, #1e90ff 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">🌿</div>
+                    <div class="plant-info-3rd">
+                        <div class="plant-name-3rd">Sweet Basil</div>
+                        <div class="plant-description-3rd">Aromatic herb, loves warm weather</div>
+                        <div class="plant-meta-3rd">
+                            <span class="match-rate-3rd">92% Match</span>
+                            <span class="growth-time-3rd">30-45 days</span>
+                        </div>
+                    </div>
+                    <div class="arrow-3rd">›</div>
+                </div>
+                
+                <div class="plant-item-3rd">
+                    <div class="plant-image-3rd" style="background: linear-gradient(135deg, #ffa726 0%, #ff7043 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">🌼</div>
+                    <div class="plant-info-3rd">
+                        <div class="plant-name-3rd">Marigolds</div>
+                        <div class="plant-description-3rd">Bright flowers, natural pest repellent</div>
+                        <div class="plant-meta-3rd">
+                            <span class="match-rate-3rd">88% Match</span>
+                            <span class="growth-time-3rd">45-60 days</span>
+                        </div>
+                    </div>
+                    <div class="arrow-3rd">›</div>
+                </div>
+            </div>
+            
+            <!-- Right Panel: My Plants -->
+            <div class="panel-3rd">
+                <div class="panel-header-3rd">
+                    <h2 class="panel-title-3rd">My Plants</h2>
+                    <a href="#" class="my-garden-link-3rd">My Garden</a>
+                </div>
+                
+                <div class="progress-item-3rd">
+                    <div class="progress-header-3rd">
+                        <div class="progress-info-3rd">
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+                                <div class="plant-image-3rd" style="width: 45px; height: 45px; background: linear-gradient(135deg, #2ed573 0%, #7bed9f 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">🌱</div>
+                                <div>
+                                    <h3>My Tomato Plant</h3>
+                                    <div class="progress-stage-3rd">Day 23 • Seedling Stage</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="status-badge-3rd healthy-3rd">Healthy</div>
+                    </div>
+                    
+                    <div class="progress-section-3rd">
+                        <div class="progress-label-3rd">Progress 38%</div>
+                        <div class="progress-bar-3rd">
+                            <div class="progress-fill-3rd" style="width: 38%;"></div>
+                        </div>
+                        <div class="progress-footer-3rd">
+                            <span class="next-action-3rd">Next watering in 2 days</span>
+                            <button class="update-btn-3rd">Update</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="progress-item-3rd">
+                    <div class="progress-header-3rd">
+                        <div class="progress-info-3rd">
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+                                <div class="plant-image-3rd" style="width: 45px; height: 45px; background: linear-gradient(135deg, #2ed573 0%, #7bed9f 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">🌿</div>
+                                <div>
+                                    <h3>Basil Garden</h3>
+                                    <div class="progress-stage-3rd">Day 45 • Mature</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="status-badge-3rd ready-3rd">Ready to Harvest</div>
+                    </div>
+                    
+                    <div class="progress-section-3rd">
+                        <div class="progress-label-3rd">Progress 95%</div>
+                        <div class="progress-bar-3rd">
+                            <div class="progress-fill-3rd" style="width: 95%;"></div>
+                        </div>
+                        <div class="progress-footer-3rd">
+                            <span class="next-action-3rd">Perfect harvest time!</span>
+                            <button class="update-btn-3rd">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bottom Navigation -->
     <div class="nav-tabs">
       <a href="#" class="nav-tab active" onclick="showPage('page-1')">
-        <span>🏠</span>
+        <span> <i class="fa-solid fa-house" style="color: #b7bbb9;"></i></span>
         Home
       </a>
       <a href="#" class="nav-tab" onclick="showPage('page-2')">
-        <span>🌿</span>
+        <span><i class="fa-solid fa-tree" style="color: #b7bbb9;"></i></span>
         My Garden
       </a>
       <a href="#" class="nav-tab">
-        <span>📚</span>
-        Plant Library
+        <span><i class="fa-solid fa-camera" style="color: #4ade80;" ></i></span>
+        Camera
       </a>
       <a href="#" class="nav-tab">
         <span>💡</span>
